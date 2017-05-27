@@ -1,0 +1,801 @@
+[Workspace Header]
+Version = 850
+Pathname = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.cws"
+CVI Dir = "/d/program files (x86)/national instruments/cvi85"
+CVI Shared Dir = "/D/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI85"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "DWDM ONU Parallel ATE.prj"
+Project 0001 Folder Source Files Collapsed = True
+Drag Bar Left = 212
+Window Top = 71
+Window Left = 91
+Window Bottom = 818
+Window Right = 1212
+Maximized = False
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Global Hot Key = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 11
+Window Confinement Region Enabled = True
+MainColumnWidth = 193
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 850
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 0
+Batch Build Release = True
+Batch Build Debug = False
+Force Rebuild = False
+
+[File 0001]
+Path = "/c/vxipnp/winNT/AG8614X/ag8614x.fp"
+File Type = "Function Panel"
+Disk Date = 3073346298
+In Projects = "1,"
+
+[File 0002]
+Path = "/d/program files (x86)/national instruments/cvi85/toolslib/custctrl/combobox.fp"
+File Type = "Function Panel"
+Disk Date = 3275949600
+In Projects = "1,"
+
+[File 0003]
+Path = "/c/Program Files (x86)/National Instruments/CVI85/SQL20/cvi_db.fp"
+File Type = "Function Panel"
+Disk Date = 3028658030
+In Projects = "1,"
+
+[File 0004]
+Path = "/d/program files (x86)/national instruments/cvi85/toolslib/toolbox/inifile.fp"
+File Type = "Function Panel"
+Disk Date = 3275949600
+In Projects = "1,"
+
+[File 0005]
+Path Line0001 = "/d/program files (x86)/national instruments/cvi85/toolslib/custctrl/radioGroup.f"
+Path Line0002 = "p"
+File Type = "Function Panel"
+Disk Date = 3275949600
+In Projects = "1,"
+
+[File 0006]
+Path = "/c/vxipnp/winNT/tktds8k/Tktds8k.fp"
+File Type = "Function Panel"
+Disk Date = 3245713318
+In Projects = "1,"
+
+[File 0007]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.uir"
+File Type = "User Interface Resource"
+Disk Date = 3578624228
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = 323
+Window Width = 545
+Window Z-Order = 2
+
+[File 0008]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.c"
+File Type = "CSource"
+Disk Date = 3578624853
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Window Z-Order = 3
+Source Window State = "1,8934,8934,8934,16,29,29,0,0,111,0,6923,0,0,0,25,8982,0,9009,106,323,731,1,0,"
+
+[File 0009]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM_ONU_DS4830.c"
+File Type = "CSource"
+Disk Date = 3572329895
+In Projects = "1,"
+Window Top = 152
+Window Left = 70
+Source Window State = "1,1532,1532,1532,4,32,32,0,0,0,0,2138,0,1569,0,0,1515,0,1527,89,323,521,1,14,"
+Breakpoint 0001 = "1689,0,enabled,"
+
+[File 0010]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/function.c"
+File Type = "CSource"
+Disk Date = 3578692550
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Z-Order = 1
+Source Window State Line0001 = "1,18669,18669,18669,0,18,18,0,0,140,0,2570,0,0,0,54,18670,0,18678,87,323,401,1,1"
+Source Window State Line0002 = "3,"
+Breakpoint 0001 = "3368,0,enabled,"
+Breakpoint 0002 = "6650,0,enabled,"
+Breakpoint 0003 = "6653,0,enabled,"
+Breakpoint 0004 = "15496,0,enabled,"
+
+[File 0011]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT.c"
+File Type = "CSource"
+Disk Date = 3563852802
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Window Z-Order = 9
+Source Window State = "1,119,119,119,5,16,16,0,0,80,0,606,0,606,0,21,109,0,142,47,275,545,1,0,"
+
+[File 0012]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/cvidll.h"
+File Type = "Include"
+Disk Date = 3571104106
+In Projects = ""
+Window Top = 32
+Window Left = 10
+Window Z-Order = 11
+Source Window State = "1,0,0,0,0,0,0,0,0,113,0,0,0,0,0,25,0,0,0,0,323,743,1,0,"
+
+[File 0013]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/global.h"
+File Type = "Include"
+Disk Date = 3570434636
+In Projects = "1,"
+Window Top = 34
+Window Left = 10
+Window Z-Order = 10
+Source Window State = "1,571,571,571,0,17,17,0,0,80,0,0,0,0,0,25,500,0,531,61,323,545,1,0,"
+
+[File 0014]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/function.h"
+File Type = "Include"
+Disk Date = 3578623456
+In Projects = "1,"
+Window Top = 34
+Window Left = 10
+Window Z-Order = 5
+Source Window State = "1,28,28,28,26,28,28,0,0,80,0,376,0,0,0,24,0,0,14,93,311,545,1,26,"
+
+[File 0015]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86142.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Z-Order = 8
+Source Window State = "1,15,15,15,5,19,19,0,0,76,0,0,0,0,0,18,0,0,21,69,239,521,1,0,"
+
+[File 0016]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/About.uir"
+File Type = "User Interface Resource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 122
+Window Left = 54
+Window Height = 323
+Window Width = 545
+Window Z-Order = 7
+
+[File 0017]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/license.uir"
+File Type = "User Interface Resource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Window Height = 275
+Window Width = 545
+Window Z-Order = 6
+
+[File 0018]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.h"
+File Type = "Include"
+Disk Date = 3578624858
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Window Z-Order = 4
+Source Window State = "1,130,130,130,9,31,31,0,0,80,0,0,0,0,0,21,347,0,371,49,275,545,1,0,"
+
+[File 0019]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/About.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0020]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86100.c"
+File Type = "CSource"
+Disk Date = 3535500408
+In Projects = "1,"
+Window Top = 34
+Window Left = 6
+Source Window State = "1,161,161,161,5,26,26,0,0,0,0,0,0,0,0,0,92,0,110,13,251,545,1,0,"
+
+[File 0021]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86100.h"
+File Type = "Include"
+Disk Date = 3535500408
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,0,46,72,251,545,1,0,"
+
+[File 0022]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86120B.c"
+File Type = "CSource"
+Disk Date = 3570839292
+In Projects = "1,"
+Window Top = 122
+Window Left = 54
+Source Window State = "1,100,100,100,40,69,40,0,0,0,0,0,0,0,0,0,70,0,84,100,323,545,1,0,"
+
+[File 0023]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86120B.h"
+File Type = "Include"
+Disk Date = 3550465890
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,8,8,8,11,24,24,0,3,0,0,0,0,0,0,0,0,0,8,11,323,545,1,0,"
+
+[File 0024]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86142.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 152
+Window Left = 70
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,12,323,545,1,0,"
+
+[File 0025]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ633x.c"
+File Type = "CSource"
+Disk Date = 3550007072
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Source Window State = "1,48,48,48,9,15,15,0,0,0,0,0,0,0,0,0,29,0,56,79,323,545,1,0,"
+
+[File 0026]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ633x.h"
+File Type = "Include"
+Disk Date = 3550007072
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,9,9,9,0,151,151,0,0,0,0,0,0,0,0,0,0,0,9,0,323,545,1,0,"
+
+[File 0027]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ637x.c"
+File Type = "CSource"
+Disk Date = 3550029574
+In Projects = "1,"
+Window Top = 122
+Window Left = 54
+Source Window State = "1,119,119,119,4,15,15,0,3,0,0,0,0,0,0,0,93,0,119,4,323,761,1,0,"
+
+[File 0028]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ637x.h"
+File Type = "Include"
+Disk Date = 3550007822
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,7,7,7,87,91,91,0,3,0,0,0,0,0,0,0,0,0,7,87,323,761,1,0,"
+
+[File 0029]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CH341A_DLL.h"
+File Type = "Include"
+Disk Date = 3570402598
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Source Window State = "1,92,92,92,14,33,33,0,0,0,0,0,0,0,0,0,82,0,114,14,275,545,1,0,"
+
+[File 0030]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CH341A_DLL.lib"
+File Type = "Library"
+Disk Date = 3509712000
+In Projects = "1,"
+
+[File 0031]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/COFFSW.c"
+File Type = "CSource"
+Disk Date = 3525731848
+In Projects = "1,"
+Window Top = 152
+Window Left = 70
+Source Window State = "1,50,50,50,4,23,23,0,0,0,0,0,0,0,0,0,38,0,59,74,323,545,1,0,"
+
+[File 0032]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/COFFSW.h"
+File Type = "Include"
+Disk Date = 3525734284
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0033]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CSA8000.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,303,303,303,5,19,19,0,0,0,0,0,0,0,0,0,291,0,311,53,323,545,1,0,"
+
+[File 0034]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CSA8000.h"
+File Type = "Include"
+Disk Date = 3571010882
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,48,179,521,1,0,"
+
+[File 0035]
+Path = "/c/Program Files (x86)/National Instruments/CVI85/SQL20/cvi_db.h"
+File Type = "Include"
+Disk Date = 3031594304
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0036]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/cvidll.lib"
+File Type = "Library"
+Disk Date = 3532404996
+In Projects = "1,"
+
+[File 0037]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM_ONU_DS4830.h"
+File Type = "Include"
+Disk Date = 3572329895
+In Projects = "1,"
+Window Top = 182
+Window Left = 86
+Source Window State = "1,94,94,94,11,39,39,0,0,0,0,138,0,0,0,0,132,47,144,106,323,545,1,16,"
+
+[File 0038]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/EVB5.c"
+File Type = "CSource"
+Disk Date = 3556159194
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Source Window State = "1,2088,2088,2088,4,16,16,0,0,0,0,2232,0,2232,0,0,2079,0,2096,121,251,545,1,0,"
+
+[File 0039]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/EVB5.h"
+File Type = "Include"
+Disk Date = 3556147300
+In Projects = "1,"
+Window Top = 152
+Window Left = 74
+Source Window State = "1,464,464,464,11,23,23,0,3,0,0,477,0,477,0,0,401,0,464,11,251,545,1,0,"
+
+[File 0040]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/FSW.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 122
+Window Left = 54
+Source Window State = "1,29,29,29,4,18,18,0,0,0,0,0,0,0,0,0,17,0,43,47,323,545,1,0,"
+
+[File 0041]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/FSW.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,22,22,22,4,18,18,0,0,0,0,0,0,0,0,0,0,0,22,43,323,749,1,0,"
+
+[File 0042]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,50,50,50,4,19,19,0,0,0,0,0,0,0,0,0,41,0,55,82,251,545,1,0,"
+
+[File 0043]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT_DLL.dll"
+File Type = "DLL"
+Disk Date = 3509712000
+In Projects = "1,"
+
+[File 0044]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT_DLL.h"
+File Type = "Include"
+Disk Date = 3536118146
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Source Window State = "1,174,174,174,14,38,38,0,0,0,0,0,0,0,0,0,165,0,176,49,179,545,1,0,"
+
+[File 0045]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT_DLL.lib"
+File Type = "Library"
+Disk Date = 3509712000
+In Projects = "1,"
+
+[File 0046]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/global.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 34
+Window Left = 6
+Source Window State = "1,79,79,79,4,22,22,0,0,0,0,0,0,0,0,0,63,0,75,0,323,521,1,0,"
+
+[File 0047]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JHFSW.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,58,58,58,4,20,20,0,0,0,0,0,0,0,0,0,21,0,44,56,323,749,1,0,"
+
+[File 0048]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JHFSW.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0049]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JW8504.c"
+File Type = "CSource"
+Disk Date = 3540766006
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,172,172,172,5,20,20,0,0,0,0,0,0,0,0,0,61,0,78,100,323,767,1,0,"
+
+[File 0050]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JW8504.h"
+File Type = "Include"
+Disk Date = 3539039842
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,251,545,0,0,"
+
+[File 0051]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/labdll/labdll.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0052]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/labdll/labdll.lib"
+File Type = "Library"
+Disk Date = 3509712000
+In Projects = "1,"
+
+[File 0053]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/license.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,0,0,0,0,30,30,1,0,0,0,0,0,0,0,0,0,0,0,2,275,545,0,0,"
+
+[File 0054]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/license.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0055]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MEGA88.c"
+File Type = "CSource"
+Disk Date = 3536028816
+In Projects = "1,"
+Window Top = 34
+Window Left = 10
+Source Window State = "1,1159,1159,1159,50,56,56,0,0,0,0,0,0,0,0,0,1150,29,1159,50,251,545,1,0,"
+
+[File 0056]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MEGA88.h"
+File Type = "Include"
+Disk Date = 3536027722
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,302,302,302,11,37,37,0,0,0,0,0,0,0,0,0,294,0,303,58,251,545,0,0,"
+
+[File 0057]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS9740.c"
+File Type = "CSource"
+Disk Date = 3564356300
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Source Window State = "1,253,253,253,4,15,15,0,0,0,0,0,0,0,0,0,51,0,78,0,323,545,1,0,"
+
+[File 0058]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS9740.h"
+File Type = "Include"
+Disk Date = 3564356300
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,7,7,7,11,24,24,0,0,0,0,0,0,0,0,0,0,0,10,45,251,545,1,0,"
+
+[File 0059]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS97xx.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 152
+Window Left = 70
+Source Window State = "1,3919,3938,3919,0,3,0,0,0,0,0,0,0,0,0,0,3926,0,3938,0,323,545,1,0,"
+
+[File 0060]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS97xx.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 36
+Window Left = 8
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,323,545,0,0,"
+
+[File 0061]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/NT25L90.c"
+File Type = "CSource"
+Disk Date = 3536028882
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,520,520,520,90,92,92,0,0,0,0,0,0,0,0,0,34,0,49,14,251,545,1,0,"
+
+[File 0062]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/NT25L90.h"
+File Type = "Include"
+Disk Date = 3535945816
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,151,151,151,4,26,26,0,0,0,0,0,0,0,0,0,38,1,47,27,251,545,0,0,"
+
+[File 0063]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/PMSII.c"
+File Type = "CSource"
+Disk Date = 3550532974
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,392,392,392,23,46,23,0,0,0,0,169,0,0,0,0,260,0,270,18,275,545,1,63,"
+
+[File 0064]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/PMSII.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0065]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/PSS.c"
+File Type = "CSource"
+Disk Date = 3547683856
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,73,73,73,4,22,22,0,0,0,0,0,0,0,0,0,42,0,51,13,251,545,1,0,"
+
+[File 0066]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/pss.h"
+File Type = "Include"
+Disk Date = 3547683856
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0067]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SEVB0027_4001.c"
+File Type = "CSource"
+Disk Date = 3509712000
+In Projects = "1,"
+Window Top = 182
+Window Left = 86
+Source Window State = "1,50,50,50,4,28,28,0,0,0,0,0,0,0,0,0,0,0,41,55,323,545,1,0,"
+
+[File 0068]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SEVB0027_4001.h"
+File Type = "Include"
+Disk Date = 3509712000
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0069]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SuperCommand.dll"
+File Type = "DLL"
+Disk Date = 3539037562
+In Projects = "1,"
+
+[File 0070]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SuperCommand.h"
+File Type = "Include"
+Disk Date = 3542929590
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,124,124,124,36,47,47,0,0,0,0,0,0,0,0,0,112,0,130,93,323,545,1,0,"
+
+[File 0071]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SuperCommand.lib"
+File Type = "Library"
+Disk Date = 3539037564
+In Projects = "1,"
+
+[File 0072]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/supermaster.c"
+File Type = "CSource"
+Disk Date = 3542929554
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,62,62,62,23,32,32,0,0,0,0,0,0,0,0,0,15,0,41,63,311,545,1,0,"
+
+[File 0073]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/supermaster.h"
+File Type = "Include"
+Disk Date = 3539037564
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0074]
+Path = "/c/vxipnp/winNT/include/Tktds8k.h"
+File Type = "Include"
+Disk Date = 3245721580
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0075]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/TxCalibration.c"
+File Type = "CSource"
+Disk Date = 3552360672
+In Projects = "1,"
+Window Top = 34
+Window Left = 10
+Source Window State = "1,109,109,109,17,26,26,0,3,0,0,0,0,0,0,0,97,0,109,17,323,545,1,0,"
+
+[File 0076]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/TxCalibration.h"
+File Type = "Include"
+Disk Date = 3537314890
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,20,20,20,9,28,28,1,0,0,0,0,0,0,0,0,23,0,36,0,275,545,1,0,"
+
+[File 0077]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/TxCalibration.uir"
+File Type = "User Interface Resource"
+Disk Date = 3539666018
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Window Height = 275
+Window Width = 545
+
+[File 0078]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328.c"
+File Type = "CSource"
+Disk Date = 3549579084
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,1651,1651,1651,12,28,28,0,0,0,0,0,0,0,0,0,1647,0,1673,78,275,545,1,0,"
+
+[File 0079]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328.h"
+File Type = "Include"
+Disk Date = 3548743628
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,349,349,349,4,22,22,0,3,0,0,0,0,0,0,0,305,0,349,4,275,545,1,0,"
+
+[File 0080]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328S.c"
+File Type = "CSource"
+Disk Date = 3571894331
+In Projects = "1,"
+Window Top = 34
+Window Left = 6
+Source Window State = "1,399,399,399,16,27,27,0,0,0,0,1332,0,0,0,0,350,0,366,61,323,545,1,28,"
+
+[File 0081]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328S.h"
+File Type = "Include"
+Disk Date = 3556150174
+In Projects = "1,"
+Window Top = 92
+Window Left = 38
+Source Window State = "1,432,432,432,15,19,19,0,0,0,0,633,0,0,0,0,411,0,431,55,323,761,1,16,"
+
+[File 0082]
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/°æ±¾ÀúÊ·.txt"
+File Type = "Unknown"
+Disk Date = 3576885524
+In Projects = "1,"
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[DLLs Used By Executable 0001]
+DLL 0001 = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CH341A_DLL.dll"
+DLL 0002 = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/cvidll.dll"
+DLL 0003 = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT_DLL.dll"
+DLL 0004 = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SuperCommand.dll"
+
+[Command Line Args 0001]
+Command Line Args = ""
+
+[Watch Point 1]
+Watch Expression = "DAC_Arr"
+Update Display Continuously = True
+Break When Value Changes = False
+Scope = "Local"
+File = "function.c"
+Function = "tuningWavelength_Ex"
+DllName = "d:\\wenyao.xi\\SATE00xx DWDM ONU ATE\\V1.0.0.01\\DWDM ONU Parallel ATE_dbg.exe"
+
+[Watch Point 2]
+Watch Expression = "Ratio_Array"
+Update Display Continuously = True
+Break When Value Changes = False
+Scope = "Local"
+File = "function.c"
+Function = "tuningWavelength"
+DllName Line0001 = "f:\\Work_XWY\\ATE_PRO\\SATE0077 DWDM Parallel ATE\\SATE0077_DWDM Parallel ATE\\V"
+DllName Line0002 = "1.1.0.01\\DWDM ONU Parallel ATE_dbg.exe"
+

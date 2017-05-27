@@ -1,0 +1,371 @@
+================================================================
+int DLLVersion = 16;   //20140603
+文件版本：1.1.0.2
+新增对16E5的PDI接口支持。
+
+================================================================
+int DLLVersion = 16;   //20131226
+文件版本：1.1.0.1
+添加SEVB0027-0002的时钟信号切换板的通道回读函数
+
+================================================================
+int DLLVersion = 15;   //20130703
+文件版本：1.1.0.0
+新增对SEVB0027-0002的时钟信号切换板的支持
+
+int DLLVersion = 14;   //20100106
+1, add function 
+int __stdcall F320StreamC2(int iIndex, unsigned char iCommand, int iWriteLength, int iReadLength, unsigned char *ioBuffer) 
+to support USB-C2
+
+2, update A2 definition
+INT8U	reserved4;                            //pStrA2[111]     //Reserved for SFF-8079  
+into
+INT8U	PowerLeveling;                        //pStrA2[111]     //Reserved for SFF-8079  
+
+3, CH341DLL.dll version update into V2.2
+SiUSBXp.dll version update into V3.2.1.0
+可能由于CVI编译器的原因，
+SiUSBXp.h中的
+OVERLAPPED* o = NULL
+要改成不带赋值的
+OVERLAPPED* o
+================================================================
+#define DLLVersion 13 //20091021 
+1，新增对EVB11的支持，新增三个函数
+int __stdcall SET_FS_F320_DLL (int iIndex, unsigned char FS);
+//针对evb5设置F320输出FS管脚的电平.
+//针对evb11设置F320输出FS管脚的电平：
+//    该命令后面跟1个数据，数据解释如下：
+//    0x00：选择晶振输出频率115.52MHz
+//    0x01: 选择晶振输出频率161.13281MHz
+//    0x02: 选择晶振输出频率167.33165MHz
+//    0x03: 选择晶振输出频率173.37075MHz
+//    其他数据无效，保持上一次频率选择结果
+
+int __stdcall SDN_VCC_F320_DLL (int iIndex, unsigned char VCC);
+//    该命令后面跟一个数据，数据解释如下：
+//    数据的bit0：控制OLT电源的开断，1为打开，0为关断
+//    数据的bit1：控制ONU电源的开断，1为打开，0为关断
+//    其它bit无效，默认全部开电
+
+int __stdcall SEL_IIC_F320_DLL (int iIndex, unsigned char IIC);
+//    该命令后面跟一个数据，数据解释如下：
+//    数据的bit0：控制OLT电源的开断，1为打开，0为关断
+//    数据的bit1：控制ONU电源的开断，1为打开，0为关断
+//    其它bit无效，默认全部开电
+
+
+================================================================
+#define DLLVersion 12 //20090925 
+1，CH341A_DLL.h更新，
+int __stdcall I2C_HOST_RESET_F320_DLL (int iIndex, int F320I2CRate);
+改成
+I2C_HOST_RESET_F320_DLL (int iIndex, int F320I2CRate, int F320I2CSTOPbeforeReSTART);
+新增变量：
+int F320I2CSTOPbeforeReSTART=0; //=0，在主I2C读时序的ReSTART之前不加STOP；=1，在主I2C读时序的ReSTART之前加一个STOP 
+
+2，CH341A_DLL.h新增对SEVB8的10个GPIO的支持
+int __stdcall SetF320_SPI_CS9_CS0_DLL(int iIndex, int CS9_CS0); 
+//F320ExecuteCmd(iIndex, SET_CS, 1, 0, CS9_CS0);设置CS9_CS0电平，CS9_CS0的bit9..bit0分别对应GPIO的CS9_CS0电平
+
+3，在I2CStream/SPIStream/EPPStream三个函数中，增加Si_Write()之前对64byte数据长度的处理。
+
+4，修改I2C立即读的一个bug，没有把从地址发下去。
+
+================================================================
+#define DLLVersion 11 //20090916  
+1，CH341A_DLL.h更新，
+增加了预编译条件防止重复调用：
+#ifndef _CH341A_DLL_H_
+#define _CH341A_DLL_H_ 
+……
+#endif  
+
+更新了A2[] Vendor specifed部分定义：
+INT8U	LUTIndex;	//pStrA2[127] 
+INT32U	Password;	//pStrA2[123~126]   										
+INT8U   mode;		//pStrA2[122]
+INT8U   version;	//pStrA2[121]
+INT8U   BEN_i;		//pStrA2[120]
+INT8U	BAK_i;		//pStrA2[119]      															增加USB-EPP函数，操作方式和USB-I2C类似：
+int __stdcall EPP_BYTEs_WRITE_F320_DLL (int iIndex, int rom_startaddress, int rom_Lengthint, unsigned char *rom_value_arr);
+//EPP多字节指定首地址连续写 
+//注意，rom_value_arr[256]要全部传进去，仅更新rom_value_arr[rom_startaddress]到rom_value_arr[rom_startaddress+rom_Length-1]这段数据。
+
+int __stdcall EPP_BYTEs_READ_F320_DLL (int iIndex, int rom_startaddress, int rom_Length, unsigned char *rom_value_arr);
+//EPP多字节指定首地址连续读
+//注意，rom_value_arr[256]数组要全部传进去，仅更新rom_value_arr[rom_startaddress]到rom_value_arr[rom_startaddress+rom_Length-1]这段数据
+																		
+
+
+================================================================
+#define DLLVersion 10 //20090401  
+1，新增函数
+int __stdcall SEL_SPIIIC_F320_DLL (int iIndex, unsigned char SI);
+//设置F320输出SEL_SPIIIC管脚的电平，低电平选中SPI，高电平选中I2C
+
+
+================================================================
+#define DLLVersion 9 //20090327  
+1，由于7023编译出来程序空间会突破原7020的16k限制，所以在保留EEPROM的空间上就应该扩大范围。
+ERASE_DLL()和WRITEorVERIFY_DLL()有重大改动。
+
+
+================================================================
+#define DLLVersion 8 //20090120  
+1，改F320I2CRate默认设置=1;
+ //F320 I2C速率; 2CRate: 0=50KHz, 1=100KHz, 2=150KHz, others: Fi2c=24MHz/3/(256-I2CRate) 
+注意这需要F320的V5.0固件才能支持
+
+2，
+要改变主I2C速率，先执行
+SetF320I2CRate_DLL(1);//F320 I2C速率; I2CRate: 0=50KHz, 1=100KHz, 2=150KHz, others: Fi2c=24MHz/3/(256-I2CRate)
+再执行
+error = I2C_HOST_INITIALIZATION_DLL (iIndex); 
+
+3，
+int __stdcall F320_SPI_Init_DLL(int iIndex, int SPI_Rate, int SCK_PHASE, int SCK_POLARITY);
+的变量SCK_POLARITY，新增
+//bit7是CS产生方式，0：需要用户调用SetF320_SPI_NSS_DLL()函数更改，1：每次发起SPI操作时自动置低置高
+
+
+================================================================
+#define DLLVersion 7//20081227 
+1，增加I2C的立即写函数，下载mega88时会用到
+int __stdcall I2C_BYTE_CURRENT_ADDRESS_WRITE_DLL (int iIndex, int device_addr, int rom_startaddress, float T_wait)
+//仅支持F320发起的立即写，仅写device_addr和rom_startaddress
+
+2，增加执行F320命令函数，便于日后F320的firmware变了但该DLL可以通用
+int __stdcall F320ExecuteCmd_DLL(int iIndex, unsigned char iCommand, int iWriteLength, int iReadLength, unsigned char *ioBuffer);
+//执行F320命令
+
+3，增加了A2联合体定义，由于是big Edian的，但是PC机是little Edian，所以通常样这样转换一下PC才能直接使用：
+error = I2C_BYTEs_READ_DLL (USBHandle, MCU_Addr, 0, 256, myarr); 
+for (i=0; i<256; i++)
+	A2.pStrA2[i] = myarr[255-i];
+
+
+
+================================================================
+#define DLLVersion 6//20081205 
+1，彻底更新F320相关代码，从此F320相关的函数就和之前的DLL不兼容了
+void __stdcall RESET_F320_DLL (int iIndex);
+//复位F320
+int __stdcall GetF320Numbers(int *lpdwNumDevices); 
+//读取当前挂上PC的F320的数量
+int __stdcall GET_Version_F320_DLL (int iIndex, unsigned char *FVER);
+//读取F320的firmware版本号
+int __stdcall GetF320SerialNumber(int iIndex, unsigned char *SN); 
+//读取F320的SN[16]
+int __stdcall SetF320SerialNumber(int iIndex, unsigned char *SN); 
+//设置F320的SN[16]
+void __stdcall SetF320I2CRate_DLL (int I2CRate) 
+//传一个F320转I2C的速率给DLL内部的变量F320I2CRate，I2CRate: 0=50KHz, 1=100KHzint __stdcall I2C_HOST_RESET_F320_DLL (int iIndex, int F320I2CRate); 
+//复位主I2C，并设置速率F320I2CRate: 0=50KHz, 1=100KHz 
+
+int __stdcall F320ExecuteCmd_DLL(int iIndex, unsigned char iCommand, int iWriteLength, int iReadLength, unsigned char *ioBuffer);
+//执行F320命令
+
+int __stdcall F320_SPI_Init_DLL(int iIndex, int SPI_Rate, int SCK_PHASE, int SCK_POLARITY);
+//F320ExecuteCmd(0, SPI_RST, 3, 0, ioArray) 复位并重新设置SPI的速率，相位，极性 
+//ioArray[0]：速率，计算公式SCK = 12000/( ioArray[0]+1)K，如ioArray[0] = 119，则SPI速率为100K
+//ioArray[1]：相位，0：在SCK周期的第一个边沿采样数据，1：在SCK周期的第二个边沿采样数据
+//ioArray[1]：极性，0：SCK在空闲状态时处于低电平，1：SCK在空闲状态时处于高电平
+//默认设置为100K，第一个边沿采样数据，SCK在空闲状态时处于低电平
+
+int __stdcall SetF320_SPI_NSS_DLL(int iIndex, int NSS); 
+//F320ExecuteCmd(0, SPI_NSS, 1, 0, NSS);设置NSS电平，0：低电平；1：高电平
+
+int __stdcall SPI_BYTEs_READWRITE_F320_DLL (int iIndex, int iRWLength, unsigned char *iBuffer, unsigned char *oBuffer);
+//F320转SPI读写，iRWLength最大约280
+
+
+int __stdcall GET_TM_F320_DLL (int iIndex, unsigned char *TM);
+//读取F320点灯LED的时间，TM的1LSB=1s
+int __stdcall SET_TM_F320_DLL (int iIndex, unsigned char TM);
+//设置F320点灯LED的时间，TM的1LSB=1s
+int __stdcall SET_FS_F320_DLL (int iIndex, unsigned char FS);
+//设置F320输出FS管脚的电平
+
+====================================================================
+#define DLLVersion 5//20081017
+1，增加了复位主I2C设备和复位F320的功能。
+在搜索I2Chost函数I2C_HOST_INITIALIZATION_DLL()中，如果找到了host，就复位一次主I2C设备:
+I2C_HOST_RESET_F320(iIndex); //复位F320
+Delay(0.3);//等待主I2C设备复位重启
+2，增加了读写F320序列号的功能
+int __stdcall GetF320SerialNumber(int iIndex, unsigned char *SN); //读取当前挂上PC的F320的SN
+int __stdcall SetF320SerialNumber(int iIndex, unsigned char *SN); //设置当前挂上PC的F320的SN
+3，增加了F320转I2C的速率的功能
+__stdcall SetF320I2CRate_DLL (int I2CRate);
+
+====================================================================
+2008-09-02, Version=4
+1，更新F320搜索I2C的从器件代码。
+
+====================================================================
+2008-07-18, Version=3
+1，增加对F320转I2C的支持。
+所以主程序名改成了LPTCH341AF320_DLL.*
+2，约定USBHandle
+CH341，0x000 <= USBHandle <= 0x0FF; (典型值:0x000，0x001，……) 
+LPT，  0x100 <= USBHandle <= 0x3FF; (典型值:0x378，0x278)
+F320， 0x800 <= USBHandle <= 0x9FF; (典型值:0x800，0x801，……) 
+其中，
+F320的0x800偏移量是人为加的，为的是用户编程时区别于CH341的index；
+而用户调用DLL时，DLL将把这个0x800的偏移量自动减去。
+3，download 7020 firmware时，每页加延迟20ms保证正确写入。
+
+====================================================================
+2008-04-01, Version=2
+1，增加了对USB-I2C的速率控制功能，其中：
+增加了void __stdcall SetUSBiMode_DLL (int iMode);
+而且
+int I2C_SLAVE_SEARCH_USB (int iIndex, int device_addr);
+改成
+int I2C_SLAVE_SEARCH_USB (int iIndex, ULONG iMode, int device_addr);
+2，增加了获取DLL版本的函数
+int __stdcall GetDLLVersion_DLL ();
+当前版本是“2”。
+
+====================================================================
+2008-03-34
+1，增加了对LPT-I2C的支持，此时iIndex应该等于0x378或0x278即可。
+
+
+2008-03-07
+1，原先int __stdcall I2C_HOST_INITIALIZATION_DLL (int iIndex); 的注视是
+“//没找到host就返回-1，否则返回2”
+但实际代码是
+“//没找到host就返回-1，否则返回0”
+
+
+2008-03-06
+1，更新A0定义sStrA0和翻译函数A0_transform()，使之兼容SFF-8472 Rev10.0。
+
+
+2008-02-20
+1，在CH341A_I2C.h中添加一个全局变量
+int USBHandle; // 指定CH341 USB设备序号，代入下面函数的iIndex 
+作为默认的USB handle供C文件调用。当然用户也可以自己定义一个USB handle的变量名。
+2，增加了firmware download函数
+
+2008-02-19
+1，总是先执行if (iIndex<0) return -1;
+
+2008-02-17
+1，只支持USB-I2C，除去了LPT-I2C
+2，更名为CH341A_DLL.dll
+3，支持多个CH341的访问，需要先根据已知的I2C地址(例如下面的MCU_Addr)来搜索出iIndex：
+	*GBERT_USBHandle = -1;
+	//Search I2C host controller and I2C slave MCU at MCU_addr 
+	I2Chost_found = 0;
+	I2Cslave_found = 0;
+	for (iIndex=0; iIndex<255; iIndex++)
+	{	error = I2C_HOST_INITIALIZATION_DLL (iIndex); 
+		if (error!=-1) //USB host found
+		{   I2Chost_found = 1;
+			error = I2C_SLAVE_SEARCH_DLL(iIndex, MCU_addr);
+			if (error==0) //I2C MCU found
+			{	I2Cslave_found = 1;
+				*GBERT_USBHandle = iIndex; 
+			    break;//exit for() circle
+			}
+		}
+	}
+
+
+
+2008-1-1
+1，CH341的USB_OK灯会异常熄灭，发现熄灭后windows的硬件管理器的驱动还在，只需停用和启动就可唤醒，但这部分API比较复杂，要用到SetupAPI.h里的5个函数。后发现大多情况下，调用CH341ResetDevice()函数即可唤醒，又把超时改成1s。
+int InitialUSB(ULONG iIndex, ULONG iMode)
+{
+
+	if(CH341OpenDevice(iIndex) == INVALID_HANDLE_VALUE)
+	{	CH341ResetDevice(iIndex);		// 复位USB
+		CH341SetTimeout(iIndex, 0x3E8, 0x3E8);	// 指定USB超时时间,1S
+
+		if(CH341OpenDevice(iIndex) == INVALID_HANDLE_VALUE)
+			return -1;  
+	}		
+	if (!CH341SetStream(iIndex,iMode))		//设置通讯速率
+		return -1;  
+	
+	return 0;
+}
+
+==============================================================
+2007-12-01
+1，为了更兼容于老程序的编写习惯，特增加了两字节和四字节的I2C读/写函数：
+int __stdcall I2C_2BYTEs_READ_DLL(int device_addr, int rom_StartAddress, unsigned char *rom_value1, unsigned char *rom_value2);
+//双字节指定首地址读 
+//注意， rom_value1的地址是rom_StartAddress，rom_value2的地址是rom_StartAddress+1
+
+int __stdcall I2C_4BYTEs_READ_DLL(int device_addr, int rom_StartAddress, unsigned char *rom_value1, unsigned char *rom_value2, unsigned char *rom_value3, unsigned char *rom_value4); 
+//四字节指定首地址读 
+//注意， rom_value1的地址是rom_StartAddress，rom_value2的地址是rom_StartAddress+1，rom_value3的地址是rom_StartAddress+2，rom_value4的地址是rom_StartAddress+3
+
+int __stdcall I2C_2BYTEs_WRITE_DLL(int device_addr, int rom_StartAddress, unsigned char rom_value1, unsigned char rom_value2, float T_wait);
+//双字节指定首地址写 
+//注意， rom_value1的地址是rom_StartAddress，rom_value2的地址是rom_StartAddress+1
+
+int __stdcall I2C_4BYTEs_WRITE_DLL(int device_addr, int rom_StartAddress, unsigned char rom_value1, unsigned char rom_value2, unsigned char rom_value3, unsigned char rom_value4, float T_wait); 
+//四字节指定首地址写 
+//注意， rom_value1的地址是rom_StartAddress，rom_value2的地址是rom_StartAddress+1，rom_value3的地址是rom_StartAddress+2，rom_value4的地址是rom_StartAddress+3
+
+
+===============================================
+2007-010-12
+1，EP0000047-V1.1.2,  LPTorUSBtoI2C Basic Function Tester,  @WalkMan Studio, 2007/Oct/12
+2，增加USB-I2C模式下的I2C速率改变功能，支持低速20KHz,标准100KHz,快速400KHz,高速750KHz四种速率。默认100KHz。
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+2007-07-23
+仅添加编程指南：
+该源代码只在CVI编译环境中使用，如果你使用VC，那么部分代码将必须更新，比如CVI中的Delay()，inp()，outp()，在VC中好像是Sleep()，inport()，outport()。更重要的是，CVI自带并口驱动程序，但VC在Win2000/XP下就必须加挂一个并口驱动程序然后调用DLL。
+ 
+根据我的经验，目前LPTorUSB_I2C.h头文件中的这五个函数，足以应付日常工作；另，其中单字节立即读不是常用的，但down 7020的firmware源程序会用到：
+1，extern int PCHost_I2C_BYTE_CURRENT_ADDRESS_READ (int device_addr, BYTE *rom_value);
+//单字节立即读
+2，extern int PCHost_I2C_BYTE_READ (int device_addr, int rom_StartAddress, BYTE *rom_value); 
+//单字节指定地址读
+3，extern int PCHost_I2C_BYTEs_READ (int device_addr, int rom_StartAddress, int rom_Length, BYTE *rom_value_arr);
+//多字节指定首地址连续读
+//注意，rom_value_arr[]数组要全部传进去，仅更新rom_value_arr[rom_StartAddress]到rom_value_arr[rom_StartAddress+rom_Length-1]这段数据
+4，extern int PCHost_I2C_BYTE_WRITE (int device_addr, int rom_StartAddress, BYTE rom_value, float T_wait); 
+//单字节指定地址写
+5，extern int PCHost_I2C_BYTEs_WRITE (int device_addr, int rom_StartAddress, int rom_Length, BYTE *rom_value_arr, float T_wait);
+//多字节指定首地址连续写 
+//注意，rom_value_arr[]要全部传进去，仅更新rom_value_arr[rom_StartAddress]到rom_value_arr[rom_StartAddress+rom_Length-1]这段数据。
+//注意，对于EEPROM，一般地只能8byte连写；而对于7020，一般就没有最大长度的限制。
+ 
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+用户编程指南：
+1，CVI中嵌入以下代码到将调用LPTorUSB-I2C的底层函数的*.C文件中：
+//注意这个头文件顺序不能随意更改，否则编译可能出错。
+#include <ansi_c.h>  
+#include <windows.h>    
+#include <utility.h>    
+#include <userint.h>
+#include "xxx.h"          //项目自己产生的头文件
+#include "LPTorUSB_I2C.h" //LPTorUSB-I2C的底层函数的头文件
+
+3，把如下文件拷贝到project当前目录，并添加到当前project中：
+LPTorUSB_I2C.c/LPTorUSB_I2C.h
+I2C_DEVICE.c/I2C_DEVICE.h
+I2C_PROTOCOL.c/I2C_PROTOCOL.h
+I2C_LPT.c/I2C_LPT.h
+USB_I2C_DEVICE.c/USB_I2C_DEVICE.h
+CH341DLL.lib/CH341DLL.h
+//注意CH341DLL.dll也应该拷贝到project当前目录中，注意如果要用USB接口，USB驱动程序要事先安装好
+4，至此，用户就可以调用LPTorUSB_I2C.h中的函数了，LPTorUSB_I2C.h的函数头如下：
+注意，
+BYTE device_addr，是I2C从设备地址，是偶数，比如0xA0；
+BYTE rom_StartAddress，是I2C从设备的寄存器起始地址，最小0，最大255。由于很多从设备是8byte一页的EEPROM，所以在调用WRITE函数时，应该保证rom_StartAddress的寄存器和最后一个数据的寄存器，在一个8byte页中。
+BYTE *rom_value_arr数组，需要用户事先自定义，总是：unsigned char rom_value_arr[256]；
+float T_wait，是WRITE函数需要的I2C结束操作后的空闲时间，以秒为单位，精确到ms。比如7020需要0.1秒，而DS1856需要0.01秒。
+如果用并口访问，则返回NoACK，如果返回值==-1就说明出事了。
+如果USB访问，只有USB芯片故障才会返回-1，而正常工作的USB芯片不会报从设备的NoACK故障。
+

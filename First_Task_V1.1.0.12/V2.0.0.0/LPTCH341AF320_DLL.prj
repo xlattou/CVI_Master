@@ -1,0 +1,337 @@
+[Project Header]
+Version = 850
+Pathname Line0001 = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/LPTCH341AF320_DLL"
+Pathname Line0002 = ".prj"
+CVI Dir = "/c/program files/national instruments/cvi85"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI85"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+Number of Files = 18
+Target Type = "Dynamic Link Library"
+Flags = 16
+
+[File 0001]
+File Type = "Include"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CH341A_DLL.h"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/CH341A_DLL.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0002]
+File Type = "Include"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CH341DLL.H"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/CH341DLL.H"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0003]
+File Type = "Library"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CH341DLL.LIB"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/CH341DLL.LIB"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0004]
+File Type = "CSource"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dllDemo.c"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/dllDemo.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0005]
+File Type = "CSource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "F320_I2C_DEVICE.c"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/F320_I2C_DEVICE.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0006]
+File Type = "Include"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "F320_I2C_DEVICE.h"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/F320_I2C_DEVICE.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "I2C_LPT.c"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/I2C_LPT.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0008]
+File Type = "Include"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "I2C_LPT.h"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/I2C_LPT.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0009]
+File Type = "CSource"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "I2C_PROTOCOL.c"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/I2C_PROTOCOL.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0010]
+File Type = "Include"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "I2C_PROTOCOL.h"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/I2C_PROTOCOL.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0011]
+File Type = "CSource"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "LPT_I2C_DEVICE.c"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/LPT_I2C_DEVICE.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0012]
+File Type = "Include"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "LPT_I2C_DEVICE.h"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/LPT_I2C_DEVICE.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0013]
+File Type = "CSource"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "LPTCH341AF320_DLL.c"
+Path Line0001 = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/LPTCH341AF320_DLL"
+Path Line0002 = ".c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0014]
+File Type = "Include"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SiUSBXp.h"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/SiUSBXp.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0015]
+File Type = "Library"
+Res Id = 15
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SiUSBXp.lib"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/SiUSBXp.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0016]
+File Type = "Unknown"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "update_record.txt"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/update_record.txt"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0017]
+File Type = "CSource"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "USB_I2C_DEVICE.c"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/USB_I2C_DEVICE.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0018]
+File Type = "Include"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "USB_I2C_DEVICE.h"
+Path = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/USB_I2C_DEVICE.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[Folders]
+User Interface Files Folder Not Added Yet = True
+Instrument Files Folder Not Added Yet = True
+Folder 0 = "Source Files"
+Folder 1 = "Include Files"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Uninitialized Locals Compile Warning = "Conservative"
+
+[Run Options]
+Stack Size = 250000
+Image Base Address = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "CH341A_DLL.dll"
+Executable File_Debug = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/CH341A_DLL.dll"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "CH341A_DLL.dll"
+Executable File_Release = "/d/Eric/Program/SATE0060(DLL)/SATE0060-0003_CH341ADLL/V1.1.0.2/CH341A_DLL.dll"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = "LPTorUSBtoI2C Basic Function Tester"
+Numeric File Version = "1,1,0,2"
+Numeric Prod Version = "1,1,0,2"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = ""
+File Description Ex = ""
+File Version = "1.1.0.2"
+File Version Ex = "1.1.0.2"
+Internal Name = ""
+Internal Name Ex = ""
+Legal Copyright = ""
+Legal Copyright Ex = ""
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = ""
+Original Filename Ex = ""
+Private Build = ""
+Private Build Ex = ""
+Product Name = ""
+Product Name Ex = ""
+Product Version = "1.1.0.2"
+Product Version Ex = "1.1.0.2"
+Special Build = ""
+Special Build Ex = ""
+DLL Exports = "Include File Symbols"
+Export File1 = "CH341A_DLL.h"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = False
+Import Lib Base Name = "CH341A_DLL.lib"
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+

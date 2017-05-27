@@ -1,0 +1,1029 @@
+[Project Header]
+Version = 850
+Pathname = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.prj"
+CVI Dir = "/d/program files (x86)/national instruments/cvi85"
+CVI Shared Dir = "/D/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI85"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+Number of Files = 81
+Target Type = "Executable"
+Flags = 16
+
+[File 0001]
+File Type = "Include"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "About.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/About.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0002]
+File Type = "User Interface Resource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "About.uir"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/About.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0003]
+File Type = "CSource"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Ag86100.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86100.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0004]
+File Type = "Include"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Ag86100.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86100.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0005]
+File Type = "CSource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Ag86120B.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86120B.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0006]
+File Type = "Include"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Ag86120B.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86120B.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Ag86142.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86142.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0008]
+File Type = "Include"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Ag86142.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/Ag86142.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0009]
+File Type = "Function Panel"
+Res Id = 9
+Path Is Rel = False
+Path = "/c/vxipnp/winNT/AG8614X/ag8614x.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0010]
+File Type = "CSource"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AQ633x.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ633x.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0011]
+File Type = "Include"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AQ633x.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ633x.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0012]
+File Type = "CSource"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AQ637x.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ637x.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0013]
+File Type = "Include"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "AQ637x.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/AQ637x.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0014]
+File Type = "Include"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CH341A_DLL.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CH341A_DLL.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0015]
+File Type = "Library"
+Res Id = 15
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CH341A_DLL.lib"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CH341A_DLL.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0016]
+File Type = "CSource"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "COFFSW.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/COFFSW.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0017]
+File Type = "Include"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "COFFSW.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/COFFSW.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0018]
+File Type = "Function Panel"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "toolslib/custctrl/combobox.fp"
+Path = "/d/program files (x86)/national instruments/cvi85/toolslib/custctrl/combobox.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0019]
+File Type = "CSource"
+Res Id = 19
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CSA8000.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CSA8000.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0020]
+File Type = "Include"
+Res Id = 20
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CSA8000.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/CSA8000.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0021]
+File Type = "Function Panel"
+Res Id = 21
+Path Is Rel = False
+Path = "/c/Program Files (x86)/National Instruments/CVI85/SQL20/cvi_db.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0022]
+File Type = "Include"
+Res Id = 22
+Path Is Rel = False
+Path = "/c/Program Files (x86)/National Instruments/CVI85/SQL20/cvi_db.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0023]
+File Type = "Library"
+Res Id = 23
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "cvidll.lib"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/cvidll.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0024]
+File Type = "CSource"
+Res Id = 24
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "DWDM ONU Parallel ATE.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0025]
+File Type = "Include"
+Res Id = 25
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "DWDM ONU Parallel ATE.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0026]
+File Type = "User Interface Resource"
+Res Id = 26
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "DWDM ONU Parallel ATE.uir"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0027]
+File Type = "CSource"
+Res Id = 27
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "DWDM_ONU_DS4830.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM_ONU_DS4830.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0028]
+File Type = "Include"
+Res Id = 28
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "DWDM_ONU_DS4830.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM_ONU_DS4830.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0029]
+File Type = "CSource"
+Res Id = 29
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "EVB5.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/EVB5.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0030]
+File Type = "Include"
+Res Id = 30
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "EVB5.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/EVB5.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0031]
+File Type = "CSource"
+Res Id = 31
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "FSW.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/FSW.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0032]
+File Type = "Include"
+Res Id = 32
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "FSW.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/FSW.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0033]
+File Type = "CSource"
+Res Id = 33
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "function.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/function.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0034]
+File Type = "Include"
+Res Id = 34
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "function.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/function.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0035]
+File Type = "CSource"
+Res Id = 35
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "GBERT.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0036]
+File Type = "Include"
+Res Id = 36
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "GBERT.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0037]
+File Type = "DLL"
+Res Id = 37
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "GBERT_DLL.dll"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT_DLL.dll"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0038]
+File Type = "Include"
+Res Id = 38
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "GBERT_DLL.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT_DLL.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0039]
+File Type = "Library"
+Res Id = 39
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "GBERT_DLL.lib"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/GBERT_DLL.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0040]
+File Type = "CSource"
+Res Id = 40
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "global.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/global.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0041]
+File Type = "Include"
+Res Id = 41
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "global.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/global.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0042]
+File Type = "Function Panel"
+Res Id = 42
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "toolslib/toolbox/inifile.fp"
+Path = "/d/program files (x86)/national instruments/cvi85/toolslib/toolbox/inifile.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0043]
+File Type = "CSource"
+Res Id = 43
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "JHFSW.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JHFSW.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0044]
+File Type = "Include"
+Res Id = 44
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "JHFSW.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JHFSW.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0045]
+File Type = "CSource"
+Res Id = 45
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "JW8504.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JW8504.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0046]
+File Type = "Include"
+Res Id = 46
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "JW8504.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/JW8504.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0047]
+File Type = "Include"
+Res Id = 47
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "labdll/labdll.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/labdll/labdll.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0048]
+File Type = "Library"
+Res Id = 48
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "labdll/labdll.lib"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/labdll/labdll.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0049]
+File Type = "CSource"
+Res Id = 49
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "license.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/license.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0050]
+File Type = "Include"
+Res Id = 50
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "license.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/license.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0051]
+File Type = "User Interface Resource"
+Res Id = 51
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "license.uir"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/license.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0052]
+File Type = "CSource"
+Res Id = 52
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "MEGA88.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MEGA88.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0053]
+File Type = "Include"
+Res Id = 53
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "MEGA88.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MEGA88.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0054]
+File Type = "CSource"
+Res Id = 54
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "MS9740.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS9740.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0055]
+File Type = "Include"
+Res Id = 55
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "MS9740.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS9740.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0056]
+File Type = "CSource"
+Res Id = 56
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "MS97xx.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS97xx.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0057]
+File Type = "Include"
+Res Id = 57
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "MS97xx.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/MS97xx.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0058]
+File Type = "CSource"
+Res Id = 58
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "NT25L90.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/NT25L90.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0059]
+File Type = "Include"
+Res Id = 59
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "NT25L90.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/NT25L90.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0060]
+File Type = "CSource"
+Res Id = 60
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "PMSII.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/PMSII.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0061]
+File Type = "Include"
+Res Id = 61
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "PMSII.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/PMSII.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0062]
+File Type = "CSource"
+Res Id = 62
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "PSS.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/PSS.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0063]
+File Type = "Include"
+Res Id = 63
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "pss.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/pss.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0064]
+File Type = "Function Panel"
+Res Id = 64
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "toolslib/custctrl/radioGroup.fp"
+Path Line0001 = "/d/program files (x86)/national instruments/cvi85/toolslib/custctrl/radioGroup.f"
+Path Line0002 = "p"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0065]
+File Type = "CSource"
+Res Id = 65
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SEVB0027_4001.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SEVB0027_4001.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0066]
+File Type = "Include"
+Res Id = 66
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SEVB0027_4001.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SEVB0027_4001.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0067]
+File Type = "DLL"
+Res Id = 67
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SuperCommand.dll"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SuperCommand.dll"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0068]
+File Type = "Include"
+Res Id = 68
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SuperCommand.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SuperCommand.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0069]
+File Type = "Library"
+Res Id = 69
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SuperCommand.lib"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/SuperCommand.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0070]
+File Type = "CSource"
+Res Id = 70
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "supermaster.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/supermaster.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0071]
+File Type = "Include"
+Res Id = 71
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "supermaster.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/supermaster.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0072]
+File Type = "Function Panel"
+Res Id = 72
+Path Is Rel = False
+Path = "/c/vxipnp/winNT/tktds8k/Tktds8k.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0073]
+File Type = "Include"
+Res Id = 73
+Path Is Rel = False
+Path = "/c/vxipnp/winNT/include/Tktds8k.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0074]
+File Type = "CSource"
+Res Id = 74
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "TxCalibration.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/TxCalibration.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0075]
+File Type = "Include"
+Res Id = 75
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "TxCalibration.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/TxCalibration.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0076]
+File Type = "User Interface Resource"
+Res Id = 76
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "TxCalibration.uir"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/TxCalibration.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0077]
+File Type = "CSource"
+Res Id = 77
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UX3328.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0078]
+File Type = "Include"
+Res Id = 78
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UX3328.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0079]
+File Type = "CSource"
+Res Id = 79
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UX3328S.c"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328S.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0080]
+File Type = "Include"
+Res Id = 80
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "UX3328S.h"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/UX3328S.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0081]
+File Type = "Unknown"
+Res Id = 81
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "版本历史.txt"
+Path = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/版本历史.txt"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[Folders]
+Folder 0 = "User Interface Files"
+Folder 1 = "Source Files"
+Folder 2 = "Include Files"
+Folder 3 = "Instrument Files"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Uninitialized Locals Compile Warning = "Conservative"
+
+[Run Options]
+Stack Size = 8000000
+Image Base Address = 67108864
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = True
+Include Path 1 Rel To = "VXIPlug&Play"
+Include Path 1 Rel Path = "include"
+Include Path 1 = "/C/Program Files (x86)/IVI Foundation/VISA/winnt/include"
+Include Path 2 Is Rel = True
+Include Path 2 Rel To = "Project"
+Include Path 2 Rel Path = ""
+Include Path 2 = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12"
+Include Path 3 Is Rel = True
+Include Path 3 Rel To = "VXIPlug&Play"
+Include Path 3 Rel Path = "include"
+Include Path 3 = "/C/Program Files (x86)/IVI Foundation/VISA/winnt/include"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "DWDM ONU Parallel ATE_dbg.exe"
+Executable File_Debug = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE_dbg.exe"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "DWDM ONU Parallel ATE.exe"
+Executable File_Release = "/e/Labwindows_CVI/First_Task_V1.1.0.12/V1.1.0.12/DWDM ONU Parallel ATE.exe"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Exports = "Include File Symbols"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+
