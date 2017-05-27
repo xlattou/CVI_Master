@@ -819,4 +819,5 @@ int CheckErrorCode(char *PN,char *SN);
 int DB_GET_Errorcode(char *PN,char *SN);
 /**************************计算校准OSA的模拟直线*******************************/
 int CaculOSALine(double waveLen_Y[], double tempe_X[],float linepara[]);
+//
 #endif
