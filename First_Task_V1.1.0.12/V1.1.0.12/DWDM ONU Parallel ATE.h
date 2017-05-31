@@ -282,8 +282,9 @@
 #define  MENUBAR_FIBER                    20
 #define  MENUBAR_FIBER_FIBERSN            21      /* callback function: OnFiber */
 #define  MENUBAR_HELP                     22
-#define  MENUBAR_HELP_HIS                 23      /* callback function: On_His */
-#define  MENUBAR_HELP_ABOUT               24      /* callback function: On_About */
+#define  MENUBAR_HELP_ITEM_TEST           23      /* callback function: CallbackTest1 */
+#define  MENUBAR_HELP_HIS                 24      /* callback function: On_His */
+#define  MENUBAR_HELP_ABOUT               25      /* callback function: On_About */
 
 
      /* Callback Prototypes: */ 
@@ -292,6 +293,7 @@ int  CVICALLBACK Callback_DAC0(int panel, int control, int event, void *callback
 int  CVICALLBACK Callback_DAC1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK Callback_DAC_Save(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK CallBackHideOSAManual(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+void CVICALLBACK CallbackTest1(int menubar, int menuItem, void *callbackData, int panel);
 void CVICALLBACK On_About(int menubar, int menuItem, void *callbackData, int panel);
 void CVICALLBACK On_Advance(int menubar, int menuItem, void *callbackData, int panel);
 int  CVICALLBACK On_Advance_App(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
@@ -371,7 +373,7 @@ int  CVICALLBACK OnFiberOK(int panel, int control, int event, void *callbackData
 int  CVICALLBACK OnFiberQuit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK panelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK Start_Channel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
-
+extern void ShowDataBaseError (void);
 
 #ifdef __cplusplus
     }

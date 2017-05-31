@@ -21,6 +21,7 @@
 #include "function.h"
 #include "TxCalibration.h"  
 #include "EVB5.h" 
+#include "cvi_db.h"
 #include <analysis.h>
 #include "About.h"
 
@@ -54,7 +55,7 @@ static int panOsaMan;   //手动校准OSA的面板句柄
 
 int ThreadHandle;
 
-
+int hdbc1 = 0; 
 //多线程变量
 static int ghThreadLocalVar;	//多线程本地变量
 static int gFlag;				//多线程启动标志
@@ -9031,4 +9032,25 @@ int CVICALLBACK Callback_DAC_Save (int panel, int control, int event,
 			break;
 	}
 	return 0;
+}
+
+void CVICALLBACK CallbackTest1 (int menuBar, int menuItem, void *callbackData,
+		int panel)
+{
+	char buf[] = "select * from autodt_process_log where id = 209195038";
+	// 连接数据库
+	int err;	
+	err = MyDLL_DB_Init (&hdbc1); 
+	if (err) 
+	{
+		MessagePopup("提示","数据库初始化失败！");
+		return ;
+	}
+	// 下发查询语句
+	err = DBActivateSQL(hdbc1,buf);
+	if (err <= 0)
+	{
+		ShowDataBaseError();
+		return;
+	}
 }
